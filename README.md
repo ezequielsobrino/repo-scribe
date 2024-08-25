@@ -4,24 +4,25 @@
 ## Project Name
 ------------
 
-repo-scribe is a Python-based API project designed to extract repository information and generate a README file.
+repo-scribe is a Python-based tool designed to generate high-quality README files for GitHub repositories.
 
 ## Brief Description
 -------------------
 
-repo-scribe is a tool that simplifies the process of creating a README file for your repository. It extracts relevant information from your repository and generates a well-structured README file, saving you time and effort.
+repo-scribe aims to simplify the process of creating and maintaining README files by automatically extracting relevant information from the repository and generating a well-structured Markdown file.
 
 ## Main Features
 ----------------
 
-*   Extracts repository information, including repository path, files, and folders
-*   Generates a well-structured README file with essential sections
-*   Saves the README file to the specified repository path
+*   Automatic extraction of repository information
+*   Generation of high-quality README files in Markdown format
+*   Customizable content sections
+*   Easy integration with existing repositories
 
 ## Prerequisites
------------------
+----------------
 
-*   Python 3.x
+*   Python 3.8+
 *   Git
 
 ## Installation
@@ -29,49 +30,47 @@ repo-scribe is a tool that simplifies the process of creating a README file for 
 
 To install repo-scribe, follow these steps:
 
-1.  Clone the repository: `git clone https://github.com/your-username/repo-scribe.git`
+1.  Clone the repository: `git clone https://github.com/ezequielsobrino/repo-scribe.git`
 2.  Navigate to the repository directory: `cd repo-scribe`
 3.  Install the required dependencies: `pip install -r requirements.txt`
 
 ## Usage
 -----
 
-To use repo-scribe, follow these steps:
+To generate a README file for your repository, follow these steps:
 
-1.  Run the main script: `python main.py`
+1.  Run the `main.py` script: `python main.py`
 2.  Enter the path to your repository when prompted
-3.  The script will extract repository information and generate a README file
-4.  The README file will be saved to the specified repository path
+3.  The script will extract the necessary information and generate a README file in the repository directory
 
 ## Examples
 ---------
 
-*   Generate a README file for a Python project: `python main.py`
-*   Generate a README file for a Git repository: `python main.py`
+*   Generate a README file for a Python project: `python main.py /path/to/your/python/project`
+*   Generate a README file for a JavaScript project: `python main.py /path/to/your/javascript/project`
 
 ## Project Structure
--------------------
+---------------------
 
-The project structure is as follows:
+The repository is organized into the following directories and files:
 
-*   `extract_repo_info.py`: Script to extract repository information
-*   `generate_readme_content.py`: Script to generate README content
-*   `file_management.py`: Script to manage file operations
-*   `main.py`: Main script to run the application
-*   `requirements.txt`: File containing dependencies
-*   `LICENSE`: File containing license information
+*   `extract_repo_info.py`: Script responsible for extracting repository information
+*   `generate_readme_content.py`: Script responsible for generating README content
+*   `file_management.py`: Script responsible for saving the README file
+*   `main.py`: Main script that orchestrates the README generation process
+*   `requirements.txt`: File containing the required dependencies
+*   `LICENSE`: File containing the project's license information
 
 ## How to Contribute
---------------------
+----------------------
 
-To contribute to repo-scribe, follow these steps:
+Contributions are welcome! To contribute to repo-scribe, follow these steps:
 
-1.  Fork the repository: `git fork https://github.com/your-username/repo-scribe.git`
-2.  Clone the forked repository: `git clone https://github.com/your-username/repo-scribe.git`
-3.  Make changes to the code
-4.  Commit the changes: `git commit -m "Your commit message"`
-5.  Push the changes: `git push origin your-branch`
-6.  Create a pull request: `git pull-request`
+1.  Fork the repository: `git fork https://github.com/ezequielsobrino/repo-scribe.git`
+2.  Create a new branch: `git branch feature/new-feature`
+3.  Make changes and commit them: `git commit -m "Added new feature"`
+4.  Push the changes to your fork: `git push origin feature/new-feature`
+5.  Open a pull request: `git pull-request https://github.com/ezequielsobrino/repo-scribe.git`
 
 ## License
 -------
