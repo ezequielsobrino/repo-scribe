@@ -14,7 +14,7 @@ def main():
 
     # Extract repository information
     print("Extracting repository information...")
-    repo_info = extract_repo_info(repo_path)
+    repo_info = extract_repo_info(repo_path, save_output=False)
 
     # Generate README content
     print("Generating README content...")
