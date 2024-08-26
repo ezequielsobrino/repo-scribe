@@ -11,10 +11,13 @@ def main():
     if not os.path.isdir(repo_path):
         print(f"Error: The path '{repo_path}' is not a valid directory.")
         return
+    
+    base_path = os.path.dirname(os.path.abspath(__file__))
+    output_path = os.path.join(base_path, 'outputs')
 
     # Extract repository information
     print("Extracting repository information...")
-    repo_info = extract_repo_info(repo_path, output_path="d:\\repos\\repo-scribe")
+    repo_info = extract_repo_info(repo_path=repo_path, output_path=output_path)
 
     # Generate README content
     print("Generating README content...")
