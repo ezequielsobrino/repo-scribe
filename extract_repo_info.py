@@ -3,7 +3,7 @@ import subprocess
 import shlex
 import fnmatch
 
-def extract_repo_info(repo_path, save_output=False):
+def extract_repo_info(repo_path, output_path=None):
     def run_command(command):
         args = shlex.split(command)
         try:
@@ -80,8 +80,8 @@ def extract_repo_info(repo_path, save_output=False):
                 output.append(content)
 
     output_str = "\n".join(output)
-    if save_output:
-        output_file = os.path.join(repo_path, 'repo_info_log.txt')
+    if output_path:
+        output_file = os.path.join(output_path, 'repo_info_log.txt')
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(output_str)
     return output_str
