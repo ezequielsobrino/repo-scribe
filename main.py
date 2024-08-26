@@ -35,15 +35,18 @@ def main(repo_path, include_project_structure, include_file_contents, exclude_pa
         print("Failed to save README.md.")
 
 if __name__ == "__main__":
-    # Get the repository path from the user
-    repo_path = input("Enter the path to your repository: ").strip()
-
     # Example usage:
     main(
-        repo_path=repo_path,
+        repo_path="D:\\repos\\whisper",
         include_project_structure=True,
         include_file_contents=True,
-        exclude_patterns=['*.pyc', '__pycache__'],
-        log_path='directory_info.log'  # Relative path within the output folder
+        exclude_patterns = [
+            '*.pyc', '__pycache__', '.git', '.github', '.flake8', '*.flac',
+            '*.tiktoken', '*.ipynb', '*.npz', '*.png', '*.jpg',
+            '*.jpeg', '*.gif', '*.bmp', '*.tiff', '*.svg', '*.ico',
+            '*.webp', '*.heif', '*.bpg', '*.flif', '*.tga', '*.tif', '*.psd',
+            'tests'
+        ],
+        log_path='directory_info.log'  # Ruta relativa dentro de la carpeta de salida
     )
 
